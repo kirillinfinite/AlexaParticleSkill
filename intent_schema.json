@@ -1,0 +1,32 @@
+/**
+
+Custom slot types: 
+    LIST_OF_COMMANDS
+Values for LIST_OF_COMMANDS:  
+    ParticleIntent on
+    ParticleIntent off
+
+Sample utterances: 
+
+ParticleIntent {command}
+ParticleIntent turn {command}
+ParticleIntent to turn {command}
+
+*/
+
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "command",
+          "type": "LIST_OF_COMMANDS"
+        }
+      ],
+      "intent": "ParticleIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    }
+  ]
+}
